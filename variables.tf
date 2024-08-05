@@ -57,6 +57,13 @@ variable "disk_datastore" {
   type        = string
   default     = ""
 }
+
+variable "esxi_host" {
+  description = "Define the vsphere ESXI host"
+  type        = string
+  default     = ""
+}
+
 variable "io_reservation" {
   description = "The I/O reservation (guarantee) that this disk has, in IOPS. The default is no reservation."
   type        = list(number)
